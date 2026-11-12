@@ -1,0 +1,11 @@
+-- Server side. Called for everything worth keeping a record of: customs opened, parts requested, billed,
+-- fitted, repairs, invoices, stock bought and repair kits sold.
+--   message   one line in English, such as "John Smith installed 3 changes on ABC123"
+--   data      a table of details (player names, citizen ids, plate, totals, the changes...)
+--   severity  'info' or 'warn'
+-- Send it wherever you keep logs. It does nothing by default. Example with ox_lib's logger:
+--
+--   return function(message, data, severity)
+--       lib.logger(data.playerSource or 0, 'whey_mechanic', message)
+--   end
+return function(message, data, severity) end
