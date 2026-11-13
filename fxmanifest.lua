@@ -46,7 +46,6 @@ files {
 dependencies {
     '/onesync',
     'qbx_core',
-    'qbx_vehicles',
     'ox_lib',
     'oxmysql',
     'ox_inventory',
